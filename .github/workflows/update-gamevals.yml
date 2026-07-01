@@ -22,7 +22,9 @@ jobs:
         run: |
           target_message="Update GameVals to "
           result=$(gh search commits \
-            --repo runelite/runelite "$target_message" \
+            --repo runelite/runelite \
+            --sort committer-date \
+            "$target_message" \
             --json sha,commit \
             --jq '.[0] | {sha: .sha, message: .commit.message}')
           next_sha=$(echo $result | jq -r '.sha')
