@@ -18,9 +18,9 @@ EXPORT_MAP: Dict[str, List[str]] = {
     'objects': ['ObjectID.java', 'ObjectID1.java'],
     'anims': ['AnimationID.java'],
     'spotanims': ['SpotanimID.java'],
-    'varbit': ['VarbitID.java'],
-    'varp': ['VarPlayerID.java'],
-    'varc': ['VarClientID.java']
+    'varbits': ['VarbitID.java'],
+    'varps': ['VarPlayerID.java'],
+    'varcs': ['VarClientID.java']
 }
 
 OUTPUT_PATH = Path('gamevals.json')
